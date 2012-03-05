@@ -2,7 +2,7 @@ var width 	= 960,
     height 	= 500,
 	r 		= 30;
 
-    
+//Entfernen Pack Branche    
 	
 var pack = d3.layout.pack()
     .size([r - 4, r - 4])
