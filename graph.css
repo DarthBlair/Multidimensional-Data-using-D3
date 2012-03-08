@@ -6,8 +6,15 @@ circle.node {
 line.link {
   stroke: #999;
   stroke-opacity: .8;
-  
 }
+
+.link {
+  fill: none;
+  stroke: #999;
+  stroke-opacity: .8;
+  stroke-width: 4.5px;
+}
+
 
 circle {
   fill: #a0a0a0;
