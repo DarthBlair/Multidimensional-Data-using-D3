@@ -40,7 +40,7 @@ d3.json("graph.json", function(json) {
 	var node = svg.selectAll("g.node")
 			.data(json.nodes)
 		 .enter().append("svg:g")
-			.attr("class", "nod")
+			.attr("class", "node")
 			.call(force.drag);
 
 	var nodeSVG = node.append("svg")
