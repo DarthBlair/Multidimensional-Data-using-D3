@@ -3,19 +3,19 @@ var width 	= 960,
 	r 		= 30;
 	
 var treeData = {
-	"name" : "A", "load" : "10",
+	"name" : "A", "load" : "10", "posx" : "20", "posy" : "250",
 	"children" : [{
-			"name" : "A1", "load" : "100"
+			"name" : "A1", "load" : "100", "posx" : "60", "posy" : "210"
 		}, {
-			"name" : "A2", "load" : "33"
+			"name" : "A2", "load" : "33", "posx" : "60", "posy" : "250"
 		}, {
-			"name" : "A3", "load" : "420",
+			"name" : "A3", "load" : "42", "posx" : "60", "posy" : "290",
 			"children" : [{
-					"name" : "A31", "load" : "50",
+					"name" : "A31", "load" : "50", "posx" : "100", "posy" : "290",
 					"children" : [{
-							"name" : "A311", "load" : "100"
+							"name" : "A311", "load" : "100", "posx" : "140", "posy" : "250"
 						}, {
-							"name" : "A312", "load" : "200"
+							"name" : "A312", "load" : "20", "posx" : "140", "posy" : "290"
 						}
 					]
 				}
@@ -38,6 +38,11 @@ var pack = d3.layout.pack()
 
 var tree = d3.layout.tree()
 	.size([height, width]);
+	// .separation(function separation(a, b) {
+			// return a.parent == b.parent ? 1 : 2;
+	// });
+
+
 	
 var diagonal = d3.svg.diagonal()
 	.projection(function (d, i) {
@@ -45,57 +50,64 @@ var diagonal = d3.svg.diagonal()
 	});
 
 var nodes = tree.nodes(treeData);
+
 var link = vis.selectAll("pathlink")
 	.data(tree.links(nodes))
 	.enter().append("svg:path")
 	.attr("class", "link")
+	.attr("x1", function(d) { return d.source.posx; })
+	.attr("y1", function(d) { return d.source.posy; })
+	.attr("x2", function(d) { return d.target.posx; })
+	.attr("y2", function(d) { return d.target.posy; })
 	.attr("d", diagonal);
-
+	
 var node = vis.selectAll("g.node")
 	.data(nodes)
 	.enter().append("svg:g")
 	.attr("transform", function (d, i) {
 		return "translate(" + d.y + "," + d.x + ")";
-	})
+	});
 	
-	var nodeSVG = node.append("svg")
-	.attr("x", -r/2)
-	.attr("y", -r/2);
+	// var nodeSVG = node.append("svg")
+	// .attr("r", function(d) { return d.load; })
+	// .attr("x", -r/2)
+	// .attr("y", -r/2);
 	
-// node.append("svg:circle")
-// .attr("r", 4.5);
-
-// node.append("svg:text")
-// .attr("dx", function(d) { return d.children ? -8 : 8; })
-// .attr("dy", 3)
+node.append("svg:circle")
+.attr("r", function(d) { return d.load; })
+.attr("x", function(d) { return d.posx; })
+.attr("y", function(d) { return d.posy; })
+node.append("svg:text")
+.attr("dx", function(d) { return d.children ? -8 : 8; })
+.attr("dy", 3)
 // .attr("text-anchor", function(d) { return d.children ? "end" : "start"; })
-// .text(function(d) { return d.name; });
+.text(function(d) { return d.name; });
 
 
-d3.json("pack.json", function (packjson) {
-	var testdata = new Array();
-	for (var i = 0; i < node[0].length; i++) {
-		//testdata[i]=data;
-		testdata.push(packjson);
-	};
+// d3.json("pack.json", function (packjson) {
+	// var testdata = new Array();
+	// for (var i = 0; i < node[0].length; i++) {
+		// //testdata[i]=data;
+		// testdata.push(packjson);
+	// };
 	
-	var testmove = nodeSVG.data(testdata).selectAll(".node")
-		.data(pack.nodes)
-		.enter().append("g")
-		.attr("class", function (d) {
-			if (d.children) {
-				if (d.depth == 0)
-					return "root";
-				else
-					return "node";
-			} else
-				return "leaf";
-		})
-		.append("circle")
-		.attr("transform", function (d) {
-			return "translate(" + (d.x + 2) + "," + (d.y + 2) + ")";
-		})
-		.attr("r", function (d) {
-			return d.r;
-		});
-});
+	// var testmove = nodeSVG.data(testdata).selectAll(".node")
+		// .data(pack.nodes)
+		// .enter().append("g")
+		// .attr("class", function (d) {
+			// if (d.children) {
+				// if (d.depth == 0)
+					// return "root";
+				// else
+					// return "node";
+			// } else
+				// return "leaf";
+		// })
+		// .append("circle")
+		// .attr("transform", function (d) {
+			// return "translate(" + (d.x + 2) + "," + (d.y + 2) + ")";
+		// })
+		// .attr("r", function (d) {
+			// return d.r;
+		// });
+// });
