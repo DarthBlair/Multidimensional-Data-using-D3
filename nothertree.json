@@ -1,0 +1,17 @@
+{"nodes":[
+	{"name" : "A", "load" : "10", "posx" : "50", "posy" : "250"},
+		{"name" : "A1", "load" : "53", "posx" : "250", "posy" : "150"},
+		{"name" : "A2", "load" : "33", "posx" : "250", "posy" : "250"},
+		{"name" : "A3", "load" : "42", "posx" : "250", "posy" : "350"},
+			{"name" : "A31", "load" : "50", "posx" : "450", "posy" : "350"},
+				{"name" : "A311", "load" : "10", "posx" : "650", "posy" : "250"},
+				{"name" : "A312", "load" : "20", "posx" : "650", "posy" : "350"}
+],
+"links":[
+	{"source":0,"target":1,"value":1},
+	{"source":0,"target":2,"value":1},
+	{"source":0,"target":3,"value":1},
+	{"source":3,"target":4,"value":1},
+	{"source":4,"target":5,"value":3},
+	{"source":4,"target":6,"value":1}
+]}

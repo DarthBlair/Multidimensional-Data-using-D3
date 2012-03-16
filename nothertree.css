@@ -1,0 +1,41 @@
+circle.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+line.link {
+  stroke: #999;
+  stroke-opacity: .8;
+  stroke-width: 4.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .8;
+  stroke-width: 4.5px;
+}
+
+
+circle {
+  fill: #a0a0a0;
+  fill-opacity: 1;
+  stroke: #6B4B3D;
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #B72025;
+  fill-opacity: 1;
+  stroke: #6B1215;
+  stroke-width: 1px;
+}
+.root circle {
+  fill: #dbdbdb;
+  fill-opacity: 1;
+  stroke: #474747;
+  stroke-width: 2px;
+}
+
+text {
+  font: 10px sans-serif;
+}
