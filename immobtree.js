@@ -38,6 +38,9 @@ d3.json("graph.json", function(json) {
     json.links.forEach(function(d, i) {
 	  d.source.x -= k;
 	  d.target.x += k;
+	  // •	    .charge(function(d) { return d._children ? -d.size / 100 : -30; })
+// •	    .linkDistance(function(d) { return d.target._children ? 80 : 30; })
+
     });
 
     node.attr("cx", function(d) { return d.x; })
