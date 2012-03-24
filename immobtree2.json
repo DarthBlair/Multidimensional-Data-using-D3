@@ -1,0 +1,47 @@
+{
+	"name" : "A", "size" : "10",
+	"children" : [{
+			"name" : "A1", "size" : "53",
+			"children" : [{
+				"name" : "A1", "size" : "53"
+			},{
+				"name" : "A1", "size" : "53",
+				"children" : [{
+					"name" : "A1", "size" : "53"
+					},{
+					"name" : "A1", "size" : "53"
+					}]
+					}
+					]
+		}, {
+			"name" : "A2", "size" : "33"
+		}, {
+			"name" : "A3", "size" : "42",
+			"children" : [{
+					"name" : "A31", "size" : "50",
+					"children" : [{
+							"name" : "A311", "size" : "10"
+						}, {
+							"name" : "A312", "size" : "20"
+						}, {
+							"name" : "A312", "size" : "20"
+						}, {
+							"name" : "A312", "size" : "20",
+							"children" : [{
+								"name" : "A311", "size" : "10"
+								}, {
+								"name" : "A312", "size" : "20"
+								}, {
+								"name" : "A312", "size" : "20"
+								}, {
+								"name" : "A312", "size" : "20"
+								}
+							]
+						}
+
+					]
+				}
+			]
+		}
+	]
+}
