@@ -1,19 +1,11 @@
 var w = 1000,
     h = 1000,
-	ux = 500,
-	uy = 500,
+	ux = 200,
+	uy = 200,
 	linklen = 100,
+	rdonut = 10;
 	ideasnum = 6,
-	secwinkel = (360 / ideasnum) * (Math.PI / 180),
-	offset = (270) * (Math.PI / 180);
-
-var force = d3.layout.force()
-    // .gravity(.2)
-    // .charge(function(d) { return -d.size*50; }) // 80
-	// .linkDistance(function(d) { return linklen*(d.target.depth); })
-	.linkStrength(0.1)
-	.friction(0.1)
-    .size([w, h]);
+	secwinkel = (360 / ideasnum) * (Math.PI / 180);
 
 var svg = d3.select("#chart").append("svg:svg")
     .attr("width", w)
@@ -22,14 +14,51 @@ var svg = d3.select("#chart").append("svg:svg")
 svg.append("svg:rect")
     .attr("width", w)
     .attr("height", h);
+	
+var JFile,
+	Trees;
 
-d3.json("immobtree2.json", function(root) {
+d3.json("rsideas.json", function(root) {
+	JFile=root;
+	// JFile.Nodes.forEach(function(child) {
+		// renameRel(child);
+	// });
+	Trees = buildtree(JFile);
+	
+	ideasnum = Trees.length;
+	secwinkel = (360 / ideasnum) * (Math.PI / 180);
+	
+	for(var i = 0; i < Trees.length; i++){
+		init(Trees[i], i);
+	}
+});
+
+function renameRel(node){
+	if(typeof node.Relations != "undefined"){
+		node.children=node.Relations;
+		
+		node.children.forEach(function(child) {
+			renameRel(child);
+		});
+	}
+};
+
+function init(root, sector){
   var nodes = flatten(root),
-      links = d3.layout.tree().links(nodes);
+      links = d3.layout.tree().links(nodes),
+	  offset = sector*secwinkel;
+  var force = d3.layout.force()
+    // .gravity(.2)
+    // .charge(function(d) { return -d.size*50; }) // 80
+	// .linkDistance(function(d) { return linklen*(d.target.depth); })
+	.linkStrength(0.1)
+	.friction(0.1)
+    .size([w, h]);
+
 
   root.fixed = true;
-  root.x = ux;
-  root.y = uy;
+  root.x = ux + Math.cos(offset + secwinkel/2)*rdonut;
+  root.y = uy + Math.sin(offset + secwinkel/2)*rdonut;
 
   force
       .nodes(nodes)
@@ -37,14 +66,16 @@ d3.json("immobtree2.json", function(root) {
       .start();
 
   var link = svg.selectAll("line")
-      .data(links)
+      .data(links, function(d) {return d.source.Id+d.target.Id})
     .enter().insert("svg:line");
 
   var node = svg.selectAll("circle.node")
-      .data(nodes)
-    .enter().append("svg:circle")
-      .attr("r", function(d){return d.size/4;})
-      .call(force.drag);
+      .data(nodes, Object)
+    .enter().append("svg:circle") //d.size/4
+      // .style("fill", function(d) { return fill(d.group); })
+      // .style("stroke", function(d) { return d3.rgb(fill(d.group)).darker(); })
+      .attr("r", function(d){return 4;});
+     // .call(force.drag);
 
   force.on("tick", function(e) {
 
@@ -79,7 +110,39 @@ d3.json("immobtree2.json", function(root) {
     node.attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
   });
-});
+};
+
+function buildtree(root) {
+	function findNode(id){
+		for (var j = 0; j < root.Nodes.length; j++){
+			if(root.Nodes[j].Id == id){
+				return j;
+			}
+		}
+	}
+  var nodes = [];
+  for(var i = 0; i < root.Nodes.length; i++){
+		
+		var childof = "not"
+		if(typeof root.Nodes[i].Relations != "undefined") {
+		root.Nodes[i].Relations.forEach(function(rel) {
+			if(rel.NodeType == "EvolutionOf"){
+				childof = rel.Content;
+			}
+		});
+		}
+		if(childof != "not"){
+			if(typeof root.Nodes[findNode(childof)].children == "undefined"){
+				root.Nodes[findNode(childof)].children = new Array();
+			}
+			root.Nodes[findNode(childof)].children.push(root.Nodes[i]);
+		}else{
+			nodes.push(root.Nodes[i]);
+		}
+	}
+	console.log(nodes.length + "/" + root.Nodes.length);
+  return nodes;
+}
 
 function flatten(root) {
   var nodes = [];

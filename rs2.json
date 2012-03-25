@@ -1,0 +1,510 @@
+{ 
+  "Id" : "root",
+  "Relations" : [
+    {
+      "Id" : "9d0f0bfb-3b50-4ca1-b878-044f92e2d7ea",
+      "Title" : "Visualisierung Dimension Explorer",
+      "DateCreated" : "/Date(1328608692707)/",
+      "DateModified" : "/Date(1329897064147)/",
+      "Relations" : [
+        {
+          "NodeType" : "Rating",
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "Weight" : 50,
+          "Content" : "0",
+          "DateCreated" : "/Date(1328608693067)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "3",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330172308540)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "5",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330423085317)/"
+        },
+        {
+          "Id" : "b191be50-23dc-4862-9d68-502a7c3bc09b",
+          "NodeType" : "Tag",
+          "Content" : "Explorer",
+          "Weight" : 50,
+          "DateCreated" : "/Date(-62135596800000)/"
+        },
+        {
+          "Id" : "35585c19-8b65-4cda-a97a-60a4f1a6cdca",
+          "NodeType" : "Tag",
+          "Content" : "Visualisierung",
+          "Weight" : 50,
+          "DateCreated" : "/Date(-62135596800000)/"
+        },
+        {
+          "Id" : "bf3ab1cc-89fc-4bea-a489-ab47fb888cd0",
+          "NodeType" : "Tag",
+          "Content" : "Dimension",
+          "Weight" : 50,
+          "DateCreated" : "/Date(-62135596800000)/"
+        }
+      ]
+    },
+    {
+      "Id" : "1ef2c74f-c6f1-404f-9ab8-0bf4f89a2920",
+      "Title" : "Meine erste Idee",
+      "DateCreated" : "/Date(1330109561553)/",
+      "DateModified" : "/Date(1330170399507)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330109561553)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330109561967)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "1",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330345327957)/"
+        }
+      ]
+    },
+    {
+      "Id" : "f0453eb8-87ae-4099-9c1d-0fd7410bb8e0",
+      "Title" : "Green IT",
+      "DateCreated" : "/Date(1328509273153)/",
+      "DateModified" : "/Date(1332341565827)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "5",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328539169107)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "10",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328539454857)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "11",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328648620517)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "10",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330002270470)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "13",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330171419133)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "17",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1331718470417)/"
+        },
+        {
+          "Id" : "59f542f2-e238-435e-b85e-5e818a12252d",
+          "NodeType" : "Comment",
+          "Content" : "Klimaschutz ist ein sehr wichtiges Thema!",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328698167307)/"
+        },
+        {
+          "Id" : "6a6e6ba1-aa3c-450f-a7da-a58030dd1135",
+          "NodeType" : "Comment",
+          "Content" : "test",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329845832080)/"
+        },
+        {
+          "Id" : "1b3305ed-7d5b-48da-8231-985964781909",
+          "NodeType" : "Tag",
+          "Content" : "Recycling",
+          "Weight" : 50,
+          "DateCreated" : "/Date(-62135596800000)/"
+        },
+        {
+          "Id" : "a2a675af-e356-4d0d-beb8-952980e3b7ca",
+          "NodeType" : "Activity",
+          "Content" : "512",
+          "Weight" : 30,
+          "DateCreated" : "/Date(1331718470107)/"
+        }
+      ]
+    },
+    {
+      "Id" : "73dc6516-2380-4a6f-a446-3baf488309f6",
+      "Title" : "Mars Ocean",
+      "DateCreated" : "/Date(1328699621627)/",
+      "DateModified" : "/Date(1330948242680)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328699621897)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "4",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329651897693)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "8",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329896715920)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "9",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329896741327)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "8",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329896776417)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "6",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329896779307)/"
+        },
+        {
+          "Id" : "92311295-7633-4147-a80d-194d417115e6",
+          "NodeType" : "Tag",
+          "Content" : "Sharepoint",
+          "Weight" : 50,
+          "DateCreated" : "/Date(-62135596800000)/"
+        }
+      ]
+    },
+    {
+      "Id" : "33f6e961-1409-45ca-aa31-41223d58b0f2",
+      "Title" : "Car 2 Car Communication",
+      "DateCreated" : "/Date(1328509560493)/",
+      "DateModified" : "/Date(1328509617580)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "3",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328539234980)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "4",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328866389843)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "8",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328866399367)/"
+        },
+        {
+          "Id" : "87458895-04ab-4519-81df-da661e31f6b3",
+          "NodeType" : "Tag",
+          "Content" : "car",
+          "Weight" : 50,
+          "DateCreated" : "/Date(-62135596800000)/"
+        }
+      ]
+    },
+    {
+      "Id" : "12593cd4-4c20-4501-a5bc-4f46be2346cf",
+      "Title" : "Kostenfreier Personennahverkehr",
+      "DateCreated" : "/Date(1328509795133)/",
+      "DateModified" : "/Date(1328509840127)/",
+      "Relations" : undefined
+    },
+    {
+      "Id" : "3facf4b3-ea50-4513-94fa-595aaffbfe11",
+      "Title" : "Konferenzen für Emili",
+      "DateCreated" : "/Date(1330948798380)/",
+      "DateModified" : "/Date(1330948855913)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330948798380)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330948798787)/"
+        }
+      ]
+    },
+    {
+      "Id" : "2921d489-1a3c-450d-91e3-743d2d881066",
+      "Title" : "Implementierung eines externen Tickers",
+      "DateCreated" : "/Date(1328511019840)/",
+      "DateModified" : "/Date(1328511065947)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "4",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328522293133)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "9",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329666760520)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "10",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329924306823)/"
+        },
+        {
+          "Id" : "ad7fd71e-ba65-43a4-88c2-13fbbcf21278",
+          "NodeType" : "Comment",
+          "Content" : "Gute Idee, die deutsche Bank macht so etwas Ähnliches. Die Ergebnisse ihres internen Ideenwettbewerbs haben sie auch auf einem Plasma in der neuen Cafeteria ausgestellt (die sie übrigens ganz hin Hinblick auf \"kreative Umgebung\" gestaltet haben. z.B. Kein Kaffe aus dem Automaten, sondern hochwertigen Kaffee vom Barista an einer speziellen Theke.",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329666894623)/"
+        },
+        {
+          "Id" : "0144e66f-598f-42e4-9f27-d630a53cda72",
+          "NodeType" : "Comment",
+          "Content" : "Ja estwas zum \"Sehen\" ist immer gut",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330427749020)/"
+        }
+      ]
+    },
+    {
+      "Id" : "b123d143-2693-4c1d-930c-7c15e319cc62",
+      "Title" : "Wüsten-Solaranlagen",
+      "DateCreated" : "/Date(1328510543973)/",
+      "DateModified" : "/Date(1328510625907)/",
+      "Relations" : undefined
+    },
+    {
+      "Id" : "e0d737df-93da-4699-b68a-826cc9d65f20",
+      "Title" : "Erdwärme als Standard für neue Häuser",
+      "DateCreated" : "/Date(1328509685000)/",
+      "DateModified" : "/Date(1329482744493)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "1",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329777379820)/"
+        }
+      ]
+    },
+    {
+      "Id" : "b20ee9f0-e742-4040-8cda-9325c94d33f0",
+      "Title" : "Benzin sparen",
+      "DateCreated" : "/Date(1330357855393)/",
+      "DateModified" : "/Date(1332353375100)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330357855697)/"
+        },
+        {
+          "Id" : "3dca7036-c589-44f3-9c6c-2b8fe42620be",
+          "NodeType" : "Activity",
+          "Content" : "64",
+          "Weight" : 30,
+          "DateCreated" : "/Date(1332353220383)/"
+        }
+      ]
+    },
+    {
+      "Id" : "38b32c5d-fa46-4dd3-be70-948563da0084",
+      "Title" : "Elektrotankstellen",
+      "DateCreated" : "/Date(1328511206283)/",
+      "DateModified" : "/Date(1328539554263)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "3",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330171749930)/"
+        }
+      ]
+    },
+    {
+      "Id" : "96359b93-1102-4597-a356-9dc24b793b95",
+      "Title" : "Develop better control for DNA based computations",
+      "DateCreated" : "/Date(1330418617390)/",
+      "DateModified" : "/Date(1330677015537)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330418617390)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330418617733)/"
+        }
+      ]
+    },
+    {
+      "Id" : "97576802-5142-4c13-8730-a90978003725",
+      "Title" : "Exchange lightbulbs with energy-saving",
+      "DateCreated" : "/Date(1328510817760)/",
+      "DateModified" : "/Date(1328510883350)/",
+      "Relations" : [
+        {
+          "Id" : "11955c66-96cc-4645-9011-712fe3e5bd7e",
+          "NodeType" : "Comment",
+          "Content" : "Die machen aber hässliches Licht (und dazu noch gepulsed). Außerdem ist das Quecksilber Entsorgungs-Problem nicht geklärt und somit auch nicht die komplette Energiebilanz von Produktion bis Recycling.",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328516160463)/"
+        },
+        {
+          "Id" : "855f602c-4cb9-4410-b3a9-d1944084aaa6",
+          "NodeType" : "Comment",
+          "Content" : "Ich denke auch hier wird die Entwicklung sehr schnell voranschreiten, so dass das Licht auch viel schöner werden wird.",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328545625407)/"
+        },
+        {
+          "Id" : "b8f84bf7-e39d-4460-93a5-1b7522e3b96e",
+          "NodeType" : "Comment",
+          "Content" : "Ja das hoffe ich, denn schönes Licht machen die wirklich nicht!",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328688174807)/"
+        }
+      ]
+    },
+    {
+      "Id" : "8dbcbb5c-45ed-4883-9e26-b6b3dc8eb740",
+      "Title" : "iPhone Auto-Radios",
+      "DateCreated" : "/Date(1328278569797)/",
+      "DateModified" : "/Date(1328278772137)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "5",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328284016763)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "10",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328539284743)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "12",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1330173553507)/"
+        },
+        {
+          "Id" : "bb1efa1c-c7b7-4b75-a380-c2423539a882",
+          "NodeType" : "Comment",
+          "Content" : "Es gibt was von \"Omega\" oder so glaub ich. Aber das ist auch keine Premium-Marke.",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328283396037)/"
+        }
+      ]
+    },
+    {
+      "Id" : "7f9d535c-5beb-4ae4-bacb-cce77ed83ae9",
+      "Title" : "EMILI dissemination",
+      "DateCreated" : "/Date(1329897299330)/",
+      "DateModified" : "/Date(1330108796397)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329897299330)/"
+        },
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "0",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1329897299740)/"
+        }
+      ]
+    },
+    {
+      "Id" : "434da213-ebdf-462b-8a9d-f45f1f6ab8eb",
+      "Title" : "Umweltfreundliche Suche",
+      "DateCreated" : "/Date(1328510428887)/",
+      "DateModified" : "/Date(1328510467527)/",
+      "Relations" : [
+        {
+          "Id" : "00000000-0000-0000-0000-000000000000",
+          "NodeType" : "Rating",
+          "Content" : "3",
+          "Weight" : 50,
+          "DateCreated" : "/Date(1328522275623)/"
+        }
+      ]
+    }
+  ]
+}
